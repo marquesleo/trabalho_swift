@@ -7,18 +7,12 @@
 
 import Foundation
 
-protocol MoviesViewModelDelegate: AnyObject {
-    func getDetails(movieId: Movies)
-}
-
 class MoviesViewModel {
-    private let model: MoviesModel
-    
-    weak var delegate: MoviesViewModelDelegate?
+    private let model: MoviesModelType
     
     var movies: [Movies] = []
     
-    init(movies: MoviesModel) {
+    init(movies: MoviesModelType) {
         self.model = movies
     }
         
