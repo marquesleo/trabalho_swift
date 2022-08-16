@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wxq-A8-Gqe">
-                                <rect key="frame" x="20" y="64" width="374" height="778"/>
+                                <rect key="frame" x="40" y="64" width="334" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wxq-A8-Gqe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="35o-8G-duX"/>
-                            <constraint firstItem="wxq-A8-Gqe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WJ0-ca-88p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxq-A8-Gqe" secondAttribute="bottom" constant="20" id="mNM-WY-1OT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wxq-A8-Gqe" secondAttribute="trailing" constant="20" id="tGv-dd-fi4"/>
+                            <constraint firstItem="wxq-A8-Gqe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0ka-IH-N4j"/>
+                            <constraint firstItem="wxq-A8-Gqe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DzF-su-eZ1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wxq-A8-Gqe" secondAttribute="bottom" constant="20" id="EAP-2e-02T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wxq-A8-Gqe" secondAttribute="trailing" constant="40" id="aJ0-PC-cdf"/>
                         </constraints>
                     </view>
                     <connections>
@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="60"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="59.598214285714285"/>
         </scene>
     </scenes>
     <resources>

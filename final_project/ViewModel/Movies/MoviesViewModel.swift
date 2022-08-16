@@ -28,9 +28,5 @@ class MoviesViewModel {
             self?.movies = responseData!.results
         }
     }
-    
-    func getDetails(movieId: String) -> Void {
-        // getDetailsMovie()
-    }
 }
 

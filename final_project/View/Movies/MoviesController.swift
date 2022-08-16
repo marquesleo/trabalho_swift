@@ -9,7 +9,7 @@ import UIKit
 
 // MARK: - Main Class
 
-class MoviesController: UIViewController, UITableViewDataSource, UITableViewDelegate, MoviesViewModelDelegate {
+class MoviesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     private var viewModel: MoviesViewModel!
 
@@ -24,11 +24,15 @@ class MoviesController: UIViewController, UITableViewDataSource, UITableViewDele
         
         viewModel = MoviesViewModel(movies: MoviesModel())
         
-        viewModel.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         
         viewModel.getMovies()
+    }
+    
+    func didTapCell(position: IndexPath) {
+        let id = String(data[position.row].id)
+        self.present(MovieDetailsController(movieId: id), animated: true)
     }
     
     
@@ -45,13 +49,8 @@ class MoviesController: UIViewController, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
-}
-
-
-// MARK: - View Model Delegate Methods
-
-extension MoviesViewModelDelegate {
-    func getDetails(movieId: Movies) {
-        // TODO implement
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didTapCell(position: indexPath)
     }
 }
