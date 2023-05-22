@@ -9,12 +9,12 @@ import UIKit
 
 // MARK: - Main Class
 
-class MoviesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     private var viewModel: MoviesViewModel!
 
     var data: [Movies] {
-        return viewModel.movies
+        return viewModel.model.movies
     }
     
     // MARK: - Initialize
@@ -22,7 +22,7 @@ class MoviesController: UIViewController, UITableViewDataSource, UITableViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel = MoviesViewModel(movies: MoviesModel())
+        viewModel = MoviesViewModel(movies: MoviesModel(), service: MoviesService())
         
         tableView.delegate = self
         tableView.dataSource = self

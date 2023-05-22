@@ -8,18 +8,18 @@
 import Foundation
 
 class MoviesViewModel {
-    private let model: MoviesModelType
+    private let service: MoviesServiceType
+    var model: MoviesModelType
     
-    var movies: [Movies] = []
-    
-    init(movies: MoviesModelType) {
+    init(movies: MoviesModelType, service: MoviesServiceType) {
         self.model = movies
+        self.service = service
     }
         
     func getMovies() {
-        model.getMovies { [weak self] data, error in
+        service.getMovies { [weak self] data, error in
             let responseData = try? JSONDecoder().decode(MoviesTopRated.self, from: data!)
-            self?.movies = responseData!.results
+            self?.model.movies = responseData!.results
         }
     }
 }
