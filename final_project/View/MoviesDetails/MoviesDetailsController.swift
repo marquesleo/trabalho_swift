@@ -14,52 +14,6 @@ class MovieDetailsController: UIViewController, Coordinating {
     
     var viewModel: MovieDetailsViewModel?
     var movieId: String
-    var movie: MovieDetails? {
-        DispatchQueue.main.async { [weak self] in
-            self?.mainTitle.text = "Título: \(self?.viewModel?.movie?.title ?? "")"
-            self?.voteAverage.text = "Pontuação Média: \(String(self?.viewModel?.movie?.voteAverage ?? 0.0))"
-            self?.voteCount.text = "Total de votos: \(String(self?.viewModel?.movie?.voteCount ?? 0))"
-        }
-        
-        return viewModel?.movie
-    }
-    
-    init(movieId: String) {
-        self.movieId = movieId
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    override func viewDidLoad() {
-        self.view.backgroundColor = .white
-        view.translatesAutoresizingMaskIntoConstraints = false
-        
-        viewModel = MovieDetailsViewModel(model: MovieDetailsModel())
-        viewModel?.fetchMovie(movieId: movieId)
-        
-        view.addSubview(mainTitle)
-        view.addSubview(voteAverage)
-        view.addSubview(voteCount)
-        
-        setupConstraints()
-    }
-    
-    func setupConstraints() {
-        mainTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
-        mainTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        mainTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
-        
-        voteAverage.topAnchor.constraint(equalTo: mainTitle.topAnchor, constant: 40).isActive = true
-        voteAverage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        voteAverage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
-        
-        voteCount.topAnchor.constraint(equalTo: voteAverage.topAnchor, constant: 40).isActive = true
-        voteCount.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
-        voteCount.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
-    }
     
     lazy var mainTitle: UILabel = {
         let view = UILabel()
@@ -88,4 +42,57 @@ class MovieDetailsController: UIViewController, Coordinating {
         
         return view
     }()
+    
+    var movie: MovieDetails? {
+        return viewModel?.movie
+    }
+    
+    init(movieId: String) {
+        self.movieId = movieId
+        super.init(nibName: nil, bundle: nil)
+        super.viewDidLoad()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        self.view.backgroundColor = .white
+        
+        view.addSubview(mainTitle)
+        view.addSubview(voteAverage)
+        view.addSubview(voteCount)
+        
+        setupConstraints()
+        bindSetup()
+    }
+    
+    func setupConstraints() {
+        mainTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        mainTitle.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        mainTitle.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
+        
+        voteAverage.topAnchor.constraint(equalTo: mainTitle.topAnchor, constant: 40).isActive = true
+        voteAverage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        voteAverage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
+        
+        voteCount.topAnchor.constraint(equalTo: voteAverage.topAnchor, constant: 40).isActive = true
+        voteCount.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        voteCount.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 20).isActive = true
+    }
+    
+    func bindSetup() {
+        viewModel = MovieDetailsViewModel(model: MovieDetailsModel())
+        viewModel?.updateMovieDetails = updateScreen
+        viewModel?.fetchMovie(movieId: movieId)
+    }
+    
+    func updateScreen() {
+        DispatchQueue.main.async { [weak self] in
+            self?.mainTitle.text = "Título: \(self?.viewModel?.movie?.title ?? "")"
+            self?.voteAverage.text = "Pontuação Média: \(String(self?.viewModel?.movie?.voteAverage ?? 0.0))"
+            self?.voteCount.text = "Total de votos: \(String(self?.viewModel?.movie?.voteCount ?? 0))"
+        }
+    }
 }

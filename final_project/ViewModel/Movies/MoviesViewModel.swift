@@ -17,7 +17,7 @@ class MoviesViewModel {
         self.model = movies
         self.service = service
     }
-        
+    
     func getMovies() {
         service.getMovies { [weak self] data, error in
             let responseData = try? JSONDecoder().decode(MoviesTopRated.self, from: data!)

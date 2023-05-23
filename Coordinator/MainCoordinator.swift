@@ -10,19 +10,9 @@ import UIKit
 class MainCoordinator: Coordinator {    
     var navigationController: UINavigationController?
     //    var childCoordinators = [Coordinator]()
-
+    
     func start() {
-//        let vc = MoviesListController()
-//        vc.coordinator = self
-//        navigationController?.setViewControllers([vc], animated: false)
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "moviesList") as? MoviesListController
-        
-        guard let vc = vc else { return }
-        
-        vc.coordinator = self
-        navigationController?.setViewControllers([vc], animated: false)
+        startWithViewCode()
     }
     
     func navigate(to route: Routes, data: Any?) {
@@ -40,5 +30,22 @@ class MainCoordinator: Coordinator {
             vc.coordinator = self
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    
+    private func startWithStoryboard() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "moviesList") as? MoviesListController
+        
+        guard let vc = vc else { return }
+        
+        vc.coordinator = self
+        navigationController?.setViewControllers([vc], animated: false)
+    }
+    
+    private func startWithViewCode() {
+        let vc = MoviesListController()
+        vc.coordinator = self
+        navigationController?.setViewControllers([vc], animated: false)
     }
 }

@@ -19,7 +19,8 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
     }()
     
     private var viewModel: MoviesViewModel!
-
+    
+    // BIND GET SETUP
     private var data: [Movies] {
         return viewModel.model.movies
     }
@@ -27,6 +28,8 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
     // MARK: - Initialize
     
     override func viewDidLoad() {
+        self.view.backgroundColor = .white
+        
         super.viewDidLoad()
         
         self.view.addSubview(tableView)
@@ -37,6 +40,7 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
         
         bindSetup()
         
+        // BIND ASK DATA
         viewModel.getMovies()
     }
     
@@ -54,8 +58,10 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
     
     func didTapCell(position: IndexPath) {
         let id = String(data[position.row].id)
-        // add coordinator
-        self.present(MovieDetailsController(movieId: id), animated: true)
+        
+        // BEFORE COORDINATOR
+        //        self.present(MovieDetailsController(movieId: id), animated: true)
+        coordinator?.navigate(to: .moviesDetails, data: id)
     }
     
     func reloadTable() {
@@ -64,7 +70,6 @@ class MoviesListController: UIViewController, Coordinating, UITableViewDataSourc
         }
         
     }
-    
     
     // MARK: - Data source methods
     
