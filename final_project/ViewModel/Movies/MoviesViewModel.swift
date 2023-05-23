@@ -20,8 +20,7 @@ class MoviesViewModel {
     
     func getMovies() {
         service.getMovies { [weak self] data, error in
-            let responseData = try? JSONDecoder().decode(MoviesTopRated.self, from: data!)
-            self?.model.movies = responseData!.results
+            self?.model.setMovies(response: data)
             self?.reloadTable?()
         }
     }

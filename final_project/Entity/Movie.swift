@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - MoviesTopRated Response
 struct MoviesTopRated: Codable {
     let page: Int
     let results: [Movies]
@@ -20,7 +20,7 @@ struct MoviesTopRated: Codable {
     }
 }
 
-// MARK: - Result
+// MARK: - Movies Parsed
 struct Movies: Codable {
     let adult: Bool
     let backdropPath: String

@@ -5,7 +5,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - MoviesTopRated Details Response
 struct MovieDetails: Codable {
     let adult: Bool?
     let backdropPath: String?

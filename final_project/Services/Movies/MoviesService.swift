@@ -12,8 +12,14 @@ protocol MoviesServiceType {
 }
 
 class MoviesService: MoviesServiceType {
+    let uri: String = "https://api.themoviedb.org/3/movie"
+    let topRatedEndpoint: String = "/top_rated"
+    let apiKey: String = "828ce092ac14611725ef303e95efd77d"
+    
     func getMovies(completion: @escaping (Data?, Error?) -> Void) -> Void {
-        URLSession.shared.dataTask(with: URL(string: "https://api.themoviedb.org/3/movie/top_rated?api_key=828ce092ac14611725ef303e95efd77d")!,
+        let url = "\(uri)\(topRatedEndpoint)?api_key=\(apiKey)"
+        
+        URLSession.shared.dataTask(with: URL(string: url)!,
            completionHandler: { (data, response, error) in
                 completion(data, error)
             }
