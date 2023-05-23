@@ -10,8 +10,6 @@ import UIKit
 
 class MovieDetailsController: UIViewController, Coordinating {
     var coordinator: Coordinator?
-    
-    
     var viewModel: MovieDetailsViewModel?
     var movieId: String
     
@@ -41,6 +39,19 @@ class MovieDetailsController: UIViewController, Coordinating {
         view.text = String(movie?.voteCount ?? 0)
         
         return view
+    }()
+    
+    
+    lazy var spinner: UIActivityIndicatorView = {
+        let view = UIActivityIndicatorView()
+        
+        view.backgroundColor = UIColor(white: 0, alpha: 0.7)
+
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+        
     }()
     
     var movie: MovieDetails? {
@@ -94,5 +105,13 @@ class MovieDetailsController: UIViewController, Coordinating {
             self?.voteAverage.text = "Pontuação Média: \(String(self?.viewModel?.movie?.voteAverage ?? 0.0))"
             self?.voteCount.text = "Total de votos: \(String(self?.viewModel?.movie?.voteCount ?? 0))"
         }
+    }
+    
+    func showLoading() {
+        
+    }
+    
+    func hideLoading() {
+        
     }
 }
