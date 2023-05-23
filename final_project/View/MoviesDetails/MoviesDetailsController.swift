@@ -121,8 +121,7 @@ class MovieDetailsController: UIViewController, Coordinating {
     }
     
     func hideLoading() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//            self.spinner.stopAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             self.spinner.removeFromSuperview()
         }
     }

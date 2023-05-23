@@ -104,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				7A61E82828A564A80053566B /* final_project */,
-				7AB1707B2A1CF6D50086E65B /* Coordinator */,
 				7AC63B1D28AC429400168D90 /* final_projectTests */,
 				7AC63B2A28AC42C000168D90 /* final_projectUITests */,
 				7A61E82728A564A80053566B /* Products */,
@@ -135,6 +134,7 @@
 				7A61E83E28A568A00053566B /* ViewModel */,
 				7AB170772A1BCA210086E65B /* Services */,
 				7AC63B1228AC28D800168D90 /* Entity */,
+				7AB1707B2A1CF6D50086E65B /* Coordinator */,
 			);
 			path = final_project;
 			sourceTree = "<group>";
