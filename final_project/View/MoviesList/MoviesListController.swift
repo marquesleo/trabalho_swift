@@ -9,11 +9,18 @@ import UIKit
 
 // MARK: - Main Class
 
-class MoviesListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet weak var tableView: UITableView!
+class MoviesListController: UIViewController, Coordinating, UITableViewDataSource, UITableViewDelegate {
+    var coordinator: Coordinator?
+    
+    private var tableView: UITableView = {
+        let table =  UITableView()
+        table.translatesAutoresizingMaskIntoConstraints = false
+        return table
+    }()
+    
     private var viewModel: MoviesViewModel!
 
-    var data: [Movies] {
+    private var data: [Movies] {
         return viewModel.model.movies
     }
     
@@ -22,17 +29,40 @@ class MoviesListController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel = MoviesViewModel(movies: MoviesModel(), service: MoviesService())
-        
+        self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        
+        setupContraints()
+        
+        bindSetup()
         
         viewModel.getMovies()
     }
     
+    func bindSetup() {
+        viewModel = MoviesViewModel(movies: MoviesModel(), service: MoviesService())
+        viewModel.reloadTable = self.reloadTable
+    }
+    
+    func setupContraints() {
+        tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 20).isActive = true
+    }
+    
     func didTapCell(position: IndexPath) {
         let id = String(data[position.row].id)
+        // add coordinator
         self.present(MovieDetailsController(movieId: id), animated: true)
+    }
+    
+    func reloadTable() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+        
     }
     
     

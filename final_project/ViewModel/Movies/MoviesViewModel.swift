@@ -11,6 +11,8 @@ class MoviesViewModel {
     private let service: MoviesServiceType
     var model: MoviesModelType
     
+    var reloadTable: (() -> Void)?
+    
     init(movies: MoviesModelType, service: MoviesServiceType) {
         self.model = movies
         self.service = service
@@ -20,6 +22,7 @@ class MoviesViewModel {
         service.getMovies { [weak self] data, error in
             let responseData = try? JSONDecoder().decode(MoviesTopRated.self, from: data!)
             self?.model.movies = responseData!.results
+            self?.reloadTable?()
         }
     }
 }

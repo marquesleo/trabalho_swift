@@ -17,6 +17,9 @@
 		7A61E84428A5852F0053566B /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61E84328A5852F0053566B /* MoviesModel.swift */; };
 		7A61E84728A59ABB0053566B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61E84628A59ABB0053566B /* Movie.swift */; };
 		7AB1707A2A1BCA3D0086E65B /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB170792A1BCA3D0086E65B /* MoviesService.swift */; };
+		7AB1707D2A1CF6F40086E65B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB1707C2A1CF6F30086E65B /* Coordinator.swift */; };
+		7AB1707F2A1CF7340086E65B /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB1707E2A1CF7340086E65B /* Storyboarded.swift */; };
+		7AB170812A1CF7650086E65B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB170802A1CF7650086E65B /* MainCoordinator.swift */; };
 		7AC63B0B28AC264D00168D90 /* MoviesDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC63B0A28AC264D00168D90 /* MoviesDetailsController.swift */; };
 		7AC63B1128AC28A200168D90 /* MovieDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC63B1028AC28A200168D90 /* MovieDetailsModel.swift */; };
 		7AC63B1528AC29CE00168D90 /* MovieDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC63B1428AC29CE00168D90 /* MovieDetailsViewModel.swift */; };
@@ -57,6 +60,9 @@
 		7A61E84328A5852F0053566B /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
 		7A61E84628A59ABB0053566B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		7AB170792A1BCA3D0086E65B /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		7AB1707C2A1CF6F30086E65B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7AB1707E2A1CF7340086E65B /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		7AB170802A1CF7650086E65B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		7AC63B0A28AC264D00168D90 /* MoviesDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailsController.swift; sourceTree = "<group>"; };
 		7AC63B1028AC28A200168D90 /* MovieDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsModel.swift; sourceTree = "<group>"; };
 		7AC63B1428AC29CE00168D90 /* MovieDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7A61E82828A564A80053566B /* final_project */,
+				7AB1707B2A1CF6D50086E65B /* Coordinator */,
 				7AC63B1D28AC429400168D90 /* final_projectTests */,
 				7AC63B2A28AC42C000168D90 /* final_projectUITests */,
 				7A61E82728A564A80053566B /* Products */,
@@ -197,6 +204,16 @@
 				7AB170792A1BCA3D0086E65B /* MoviesService.swift */,
 			);
 			path = Movies;
+			sourceTree = "<group>";
+		};
+		7AB1707B2A1CF6D50086E65B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7AB1707C2A1CF6F30086E65B /* Coordinator.swift */,
+				7AB1707E2A1CF7340086E65B /* Storyboarded.swift */,
+				7AB170802A1CF7650086E65B /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		7AC63B0C28AC272200168D90 /* MoviesDetails */ = {
@@ -406,13 +423,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A61E82E28A564A80053566B /* MoviesListController.swift in Sources */,
+				7AB170812A1CF7650086E65B /* MainCoordinator.swift in Sources */,
 				7A61E82A28A564A80053566B /* AppDelegate.swift in Sources */,
 				7AC63B0B28AC264D00168D90 /* MoviesDetailsController.swift in Sources */,
 				7AC63B1728AC307D00168D90 /* MovieDetails.swift in Sources */,
 				7AC63B1128AC28A200168D90 /* MovieDetailsModel.swift in Sources */,
+				7AB1707F2A1CF7340086E65B /* Storyboarded.swift in Sources */,
 				7A61E84728A59ABB0053566B /* Movie.swift in Sources */,
 				7A61E82C28A564A80053566B /* SceneDelegate.swift in Sources */,
 				7AB1707A2A1BCA3D0086E65B /* MoviesService.swift in Sources */,
+				7AB1707D2A1CF6F40086E65B /* Coordinator.swift in Sources */,
 				7A61E84428A5852F0053566B /* MoviesModel.swift in Sources */,
 				7A61E84228A583300053566B /* MoviesViewModel.swift in Sources */,
 				7AC63B1528AC29CE00168D90 /* MovieDetailsViewModel.swift in Sources */,
@@ -598,7 +618,6 @@
 				INFOPLIST_FILE = final_project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -626,7 +645,6 @@
 				INFOPLIST_FILE = final_project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

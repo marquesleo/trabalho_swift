@@ -8,7 +8,9 @@
 import Foundation
 import UIKit
 
-class MovieDetailsController: UIViewController {
+class MovieDetailsController: UIViewController, Coordinating {
+    var coordinator: Coordinator?
+    
     
     var viewModel: MovieDetailsViewModel?
     var movieId: String
