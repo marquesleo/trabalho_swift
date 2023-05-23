@@ -96,6 +96,8 @@ class MovieDetailsController: UIViewController, Coordinating {
     func bindSetup() {
         viewModel = MovieDetailsViewModel(model: MovieDetailsModel())
         viewModel?.updateMovieDetails = updateScreen
+        viewModel?.showLoading = showLoading
+        viewModel?.hideLoading = hideLoading
         viewModel?.fetchMovie(movieId: movieId)
     }
     
@@ -108,10 +110,18 @@ class MovieDetailsController: UIViewController, Coordinating {
     }
     
     func showLoading() {
+        view.addSubview(spinner)
         
+        spinner.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        spinner.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
     }
     
     func hideLoading() {
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.spinner.stopAnimating()
+            self.spinner.removeFromSuperview()
+        }
     }
 }

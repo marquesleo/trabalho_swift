@@ -13,15 +13,20 @@ class MovieDetailsViewModel {
     
     var updateMovieDetails: (() -> Void)?
     
+    var showLoading: (() -> Void)?
+    var hideLoading: (() -> Void)?
+    
     init(model: MovieDetailsModel) {
         self.model = model
     }
     
     func fetchMovie(movieId: String) {
+        self.showLoading?()
         model.getDetails(movieId: movieId, completion: { [weak self] data, error in
             let responseData = try? JSONDecoder().decode(MovieDetails.self, from: data!)
             self?.movie = responseData
             self?.updateMovieDetails?()
+            self?.hideLoading?()
         })
     }
 }
