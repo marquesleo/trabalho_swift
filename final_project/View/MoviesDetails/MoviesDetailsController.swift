@@ -45,10 +45,12 @@ class MovieDetailsController: UIViewController, Coordinating {
     lazy var spinner: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView()
         
-        view.backgroundColor = UIColor(white: 0, alpha: 0.7)
-
+        view.style = .large
+        
         
         view.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.startAnimating()
         
         return view
         
