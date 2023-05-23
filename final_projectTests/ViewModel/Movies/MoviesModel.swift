@@ -8,15 +8,17 @@
 import XCTest
 @testable import final_project
 
-class final_projectTests: XCTestCase {
+class MoviesModelTests: XCTestCase {
     
     
-    func testExample() throws {
+    func test_should_moviesViewModel_calls_service() throws {
         let model = MoviesModelMock()
-        let viewModel = MoviesViewModel(movies: model)
+        let service = MoviesServiceMock()
+        
+        let viewModel = MoviesViewModel(movies: model, service: service)
         
         viewModel.getMovies()
         
-        XCTAssert(model.didCalledGetMoviesTimes == 1)
+        XCTAssert(service.didCalledGetMoviesTimes == 1)
     }
 }
