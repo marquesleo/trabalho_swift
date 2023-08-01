@@ -26,7 +26,9 @@ struct MovieDetails: Codable {
     let video: Bool?
     let voteAverage: Double?
     let voteCount: Int?
-
+    func getImagem() -> String {
+        return "https://image.tmdb.org/t/p/w500/" + backdropPath!
+    }
     enum CodingKeys: String, CodingKey {
         case adult
         case backdropPath = "backdrop_path"

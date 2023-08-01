@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "44996683-70EB-4D69-9900-34435E6BF696"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B0895901-3E87-44A4-9622-6BD5CF4E4682"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesList/MoviesListController.swift"
+            startingColumnNumber = "24"
+            endingColumnNumber = "30"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "data"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7845E684-0AC1-40B4-B655-537322BE70D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesList/MoviesListController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7373E790-0C2C-49FD-B1FB-E9A991644256"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/ViewModel/Movies/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "069E7F5C-51F8-44C2-9792-4E76D88A59D9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/ViewModel/Movies/MoviesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "069E7F5C-51F8-44C2-9792-4E76D88A59D9 - f9313b2a89d279a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/ViewModel/Movies/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "069E7F5C-51F8-44C2-9792-4E76D88A59D9 - 5480efa41f88c1bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in final_project.MoviesViewModel.getMovies() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/ViewModel/Movies/MoviesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F84A48CA-E1E0-4AC2-AE22-434CD3210515"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesList/MoviesListController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F84A48CA-E1E0-4AC2-AE22-434CD3210515 - e22c5172f29f5a12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MoviesListController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesList/MoviesListController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "F84A48CA-E1E0-4AC2-AE22-434CD3210515 - e22c5172f29f592a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MoviesListController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesList/MoviesListController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "95"
+                  endingLineNumber = "95"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BAD5F28-5FFD-4CEB-A753-78418BFE9C10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesList/MoviesListController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6BAD5F28-5FFD-4CEB-A753-78418BFE9C10 - 8b00464c911bd42e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MoviesListController.collectionView(_: __C.UICollectionView, numberOfItemsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesList/MoviesListController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "6BAD5F28-5FFD-4CEB-A753-78418BFE9C10 - 8b00464c911bd69a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MoviesListController.collectionView(_: __C.UICollectionView, numberOfItemsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesList/MoviesListController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "128"
+                  endingLineNumber = "128"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9834BB9D-EC31-4C76-B23C-512B4392BFFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesList/MoviesListController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83F8EB48-C8EA-4EC5-8BEC-32B4874324F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
+            landmarkName = "bindSetup()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "83F8EB48-C8EA-4EC5-8BEC-32B4874324F1 - 56e967da231804bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.showLoading() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "83F8EB48-C8EA-4EC5-8BEC-32B4874324F1 - 3468ffc992ec58c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.bindSetup() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08864EF2-8E64-4A86-89BF-737DB4EB3FDA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "imageView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "08864EF2-8E64-4A86-89BF-737DB4EB3FDA - 110fc9911dc7fcbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in final_project.MovieDetailsController.mainTitle.getter : __C.UILabel"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "08864EF2-8E64-4A86-89BF-737DB4EB3FDA - d3ea6d736405811f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImageView in final_project.MovieDetailsController.imageView.getter : __C.UIImageView"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "208">
+               </Location>
+               <Location
+                  uuid = "08864EF2-8E64-4A86-89BF-737DB4EB3FDA - d3ea6d736405811f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImageView in final_project.MovieDetailsController.imageView.getter : __C.UIImageView"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "08864EF2-8E64-4A86-89BF-737DB4EB3FDA - d3ea6d736405811f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImageView in final_project.MovieDetailsController.imageView.getter : __C.UIImageView"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAC70CFF-218D-4FA8-A8A0-78ABADC50329"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "mainTitle"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DAC70CFF-218D-4FA8-A8A0-78ABADC50329 - 110fc9911dc400dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in final_project.MovieDetailsController.mainTitle.getter : __C.UILabel"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "DAC70CFF-218D-4FA8-A8A0-78ABADC50329 - 110fc9911dc400dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in final_project.MovieDetailsController.mainTitle.getter : __C.UILabel"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "DAC70CFF-218D-4FA8-A8A0-78ABADC50329 - 110fc9911dc7fc67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UILabel in final_project.MovieDetailsController.mainTitle.getter : __C.UILabel"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DD7018C-D99F-48E7-8BBB-8B84F9688315"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/Entity/MovieDetails.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getImagem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2D562E1-B934-4C15-A93C-DD20ECA8AF32"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "application(_:didDiscardSceneSessions:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D04AA6D9-B2C5-4DE3-B872-1B57C5BDECE6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/Entity/MovieDetails.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getImagem()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB1FC5A7-CCCC-473E-89C9-D117C742B01A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
+            landmarkName = "bindSetup()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7CB0D90D-51AF-482D-A78A-897444F94CED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7CB0D90D-51AF-482D-A78A-897444F94CED - 4e57672f90b00f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.viewDidLoad() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "158"
+                  endingLineNumber = "158"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+               <Location
+                  uuid = "7CB0D90D-51AF-482D-A78A-897444F94CED - 54d56737bbb3a168"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.setupConstraints() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "165"
+                  endingLineNumber = "165"
+                  offsetFromSymbolStart = "496">
+               </Location>
+               <Location
+                  uuid = "7CB0D90D-51AF-482D-A78A-897444F94CED - 4e57672f90b124"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.viewDidLoad() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "1836">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CF34BA0-910B-40B3-BC6C-F67947CFEB1F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
+            landmarkName = "updateScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6CF34BA0-910B-40B3-BC6C-F67947CFEB1F - 56e967da231812e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "final_project.MovieDetailsController.showLoading() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "500">
+               </Location>
+               <Location
+                  uuid = "6CF34BA0-910B-40B3-BC6C-F67947CFEB1F - 40643118a23584c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in final_project.MovieDetailsController.updateScreen() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "5340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B3C18358-3572-43A3-A379-A70B47BA20D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/View/MoviesDetails/MoviesDetailsController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
+            landmarkName = "updateScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B3C18358-3572-43A3-A379-A70B47BA20D1 - 40643118a23584e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in final_project.MovieDetailsController.updateScreen() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "235"
+                  endingLineNumber = "235"
+                  offsetFromSymbolStart = "4984">
+               </Location>
+               <Location
+                  uuid = "B3C18358-3572-43A3-A379-A70B47BA20D1 - 40643118a23584c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in final_project.MovieDetailsController.updateScreen() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "4984">
+               </Location>
+               <Location
+                  uuid = "B3C18358-3572-43A3-A379-A70B47BA20D1 - 40643118a23584a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in final_project.MovieDetailsController.updateScreen() -&gt; ()"
+                  moduleName = "final_project"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/leonardomsilva/POS%20GRADUACAO/SWIFT/aula_ios_avancado_exercicio_mvvm/final_project/View/MoviesDetails/MoviesDetailsController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "4984">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "271538E2-94E8-4F70-8D91-295223B05BA8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "final_project/ViewModel/MovieDetails/MovieDetailsViewModel.swift"
+            startingColumnNumber = "16"
+            endingColumnNumber = "33"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "model"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
